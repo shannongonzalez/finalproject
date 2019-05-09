@@ -22,6 +22,6 @@ function draw() {
     image(img4, 300, 0, 300, 500);  // Upper-right
   }
   else {
-    image(img1, 300, 500, 300, 500); // Lower-right
+    image(img4, 300, 500, 300, 500); // Lower-right
   }
 }
