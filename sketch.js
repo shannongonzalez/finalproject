@@ -1,6 +1,8 @@
 function preload() {
   img1 = loadImage ("makeup35comments.jpg");
   img2 = loadImage ("nomakeup35comments.jpg");
+  img3 = loadImage ("makeup35glitchcomments2");
+  img4 = loadImage ("nomakeup35glitchcomments");
 }
 
 function setup() {
@@ -14,10 +16,10 @@ function draw() {
     image(img2,0, 0, 300, 500);   // Upper-left
   }
   else if ((mouseX <= 300) && (mouseY > 500)) {
-    rect(0, 500, 300, 500);  // Lower-left
+    image(img3, 0, 500, 300, 500);  // Lower-left
   }
   else if ((mouseX > 300) && (mouseY <= 500)) {
-    rect(300, 0, 500, 500);  // Upper-right
+    rect(img4, 300, 0, 500, 500);  // Upper-right
   }
   else {
     image(img1, 300, 500, 300, 500); // Lower-right
