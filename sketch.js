@@ -3,6 +3,7 @@ function preload() {
   img2 = loadImage ("nomakeup35comments.jpg");
   img3 = loadImage ("makeup35glitchcomments2.jpg");
   img4 = loadImage ("nomakeup35glitchcomments.jpg");
+  img5 = loadImage ("FinalBackground.jpg");
 }
 
 function setup() {
@@ -11,7 +12,7 @@ function setup() {
   fill(0);
 }
 function draw() {
-  background(204);
+  background(img5, 0, 0);
   if ((mouseX <= 300) && (mouseY <= 500)) {
     image(img2, 0, 0, 300, 500);   // Upper-left
   }
